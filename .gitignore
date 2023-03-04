@@ -1,5 +1,19 @@
-# Created by https://www.toptal.com/developers/gitignore/api/osx,visualstudiocode,python,node,yarn
-# Edit at https://www.toptal.com/developers/gitignore?templates=osx,visualstudiocode,python,node,yarn
+# Created by https://www.toptal.com/developers/gitignore/api/osx,visualstudiocode,python,jupyternotebooks,node,yarn
+# Edit at https://www.toptal.com/developers/gitignore?templates=osx,visualstudiocode,python,jupyternotebooks,node,yarn
+
+### JupyterNotebooks ###
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
 
 ### Node ###
 # Logs
@@ -246,11 +260,8 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
 
 # IPython
-profile_default/
-ipython_config.py
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
@@ -371,4 +382,4 @@ poetry.toml
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/osx,visualstudiocode,python,node,yarn
+# End of https://www.toptal.com/developers/gitignore/api/osx,visualstudiocode,python,jupyternotebooks,node,yarn
