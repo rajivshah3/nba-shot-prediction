@@ -8,4 +8,4 @@
 4. Install the dependencies by running `pip3 install -r requirements.txt`
 
 ## Getting the data
-Because the SportVU data is large and it takes a while to process, the partially preprocessed files are stored on S3 instead of GitHub. They are originally from [linouk/NBA-Player-Movements](https://github.com/linouk23/NBA-Player-Movements) and were partially preprocessed with [`preprocess_sportvu.py`](./preprocess_sportvu.py). To download the partially preprocessed files, run [`download_preproccessed_sportvu.py`](`./download_preprocessed_sportvu.py`).
+Because the SportVU data is large and it takes a while to process, the partially preprocessed files are stored on S3 instead of GitHub. They are originally from [linouk/NBA-Player-Movements](https://github.com/linouk23/NBA-Player-Movements) and were partially preprocessed with [`preprocess_sportvu.py`](./preprocess_sportvu.py). To download the partially preprocessed files, run [`download_preproccessed_sportvu.py`](./download_preprocessed_sportvu.py).
