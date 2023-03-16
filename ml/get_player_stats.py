@@ -13,6 +13,7 @@ heights_not_in_api = {
 def get_height_for_player(player_row):
     id = player_row["playerid"]
     # NBA API will block the IP if we request too quickly
+    # We need to wait 600ms between requests
     # https://github.com/swar/nba_api/issues/176#issuecomment-771991604
     sleep(0.6)
     player_info = commonplayerinfo.CommonPlayerInfo(player_id=id)
@@ -26,7 +27,7 @@ def get_height_for_player(player_row):
     height = int(height_ft) * 12 + int(height_in)
     return height
 
-def get_heights_for_team(team_df: pd.DataFrame):
+def get_stats_for_team(team_df: pd.DataFrame):
     if "height" not in team_df.columns:
         team_df["height"] = team_df.apply(get_height_for_player, axis="columns")
     return team_df
@@ -35,5 +36,5 @@ for team_file in list(filter(lambda f: ".csv" in f, os.listdir(TEAMS_CSV_DIR))):
     path = f"{TEAMS_CSV_DIR}/{team_file}"
     print(path)
     team_df = pd.read_csv(path)
-    team_df = get_heights_for_team(team_df)
+    team_df = get_stats_for_team(team_df)
     team_df.to_csv(path, index=False)
