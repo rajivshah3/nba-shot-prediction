@@ -4,4 +4,11 @@
     right: 0px;
     top: 10px;
     bottom: 0px;
+    z-index: 0;
+}
+
+#ball {
+    height: min-content;
+    width: min-content;
+    z-index: 1;
 }

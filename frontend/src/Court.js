@@ -5,11 +5,16 @@ import "./Court.css"
 export default class Court extends Component {
     componentDidMount() {
         drawCourt()
+        drawBall()
+        moveBall()
     }
 
     render() {
         return (
-            <div id="court"/>
+            <div>
+                <div id="court" /> 
+                <div id="ball" />
+            </div>
         )
     }
 }
@@ -193,4 +198,25 @@ function appendArcPath(base, radius, startAngle, endAngle) {
 
     return base.datum(d3.range(points))
         .attr("d", line);
+}
+
+const drawBall = () => {
+    const ball = d3.select("#ball").append('svg')
+        .attr("width", 480)
+        .attr("height", 480);
+    const ball_g = ball.append("g")
+    ball_g.append("circle")
+        .attr('cx', 20)
+        .attr('cy', 20)
+        .attr('r', 10)
+        .attr("fill", "#FFA500")
+    return ball_g
+}
+
+const moveBall = () => {
+    const ball = d3.select("#ball").select('svg').select("g").select("circle")
+    ball.transition()
+        .duration(1000)
+        .attr('cx', Math.random() * 480)
+        .on('end', moveBall)
 }
