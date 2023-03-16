@@ -218,5 +218,6 @@ const moveBall = () => {
     ball.transition()
         .duration(1000)
         .attr('cx', Math.random() * 480)
+        .attr('cy', Math.random() * (480 / 50 * 47))
         .on('end', moveBall)
 }
