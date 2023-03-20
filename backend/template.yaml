@@ -50,6 +50,7 @@ Resources:
             RestApiId: !Ref apiGateway
 
   listTeamsResource:
+    # CORS needs to be enabled in the console and from the Lambda function response
     Type: 'AWS::ApiGateway::Resource'
     Properties:
       RestApiId: !Ref apiGateway

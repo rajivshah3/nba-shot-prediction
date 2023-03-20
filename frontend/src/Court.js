@@ -12,7 +12,7 @@ export default class Court extends Component {
     render() {
         return (
             <div>
-                <div id="court" /> 
+                <div id="court" />
                 <div id="ball" />
             </div>
         )
