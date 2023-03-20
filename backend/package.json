@@ -1,0 +1,17 @@
+{
+    "name": "nba-shot-prediction-backend",
+    "description": "nba-shot-prediction-backend",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@aws-sdk/client-secrets-manager": "^3.294.0",
+        "aws-sdk": "^2.1338.0",
+        "mongodb": "^5.1.0"
+    },
+    "devDependencies": {
+        "jest": "^26.6.3"
+    },
+    "scripts": {
+        "test": "jest"
+    }
+}

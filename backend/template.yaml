@@ -1,0 +1,103 @@
+# This is the SAM template that represents the architecture of your serverless application
+# https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-template-basics.html
+
+# The AWSTemplateFormatVersion identifies the capabilities of the template
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  nba-shot-prediction-backend
+
+# Transform section specifies one or more macros that AWS CloudFormation uses to process your template
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
+Transform:
+- AWS::Serverless-2016-10-31
+
+# Resources declares the AWS resources that you want to include in the stack
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+Resources:
+  # Each Lambda function is defined by properties:
+  # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+
+  # This is a Lambda function config associated with the source code: get-all-items.js
+  teamsRequestHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/teams.handler
+      Runtime: nodejs16.x
+      Architectures:
+        - x86_64
+      MemorySize: 128
+      Timeout: 100
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: arn:aws:secretsmanager:us-east-1:383161319172:secret:nba-shot-prediction-mongodb-u8ylLd
+      Environment:
+      Events:
+        ListTeams:
+          Type: Api
+          Properties:
+            Path: /teams
+            Method: GET
+            RestApiId: !Ref apiGateway
+        GetTeam:
+          Type: Api
+          Properties:
+            Path: /teams/{team}
+            Method: GET
+            RequestParameters: 
+              - method.request.path.team
+            RestApiId: !Ref apiGateway
+
+  listTeamsResource:
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      RestApiId: !Ref apiGateway
+      ParentId: !GetAtt apiGateway.RootResourceId
+      PathPart: teams
+
+  listTeamsMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      HttpMethod: GET
+      AuthorizationType: NONE
+      Integration:
+        IntegrationHttpMethod: POST
+        Type: AWS_PROXY
+        Uri: !Sub
+          - arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+          - lambdaArn: !GetAtt teamsRequestHandler.Arn
+      ResourceId: !Ref listTeamsResource
+      RestApiId: !Ref apiGateway
+
+  # Each Lambda function is defined by properties:
+  # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+
+  # Based on https://bl.ocks.org/magnetikonline/c314952045eee8e8375b82bc7ec68e88
+  apiGateway:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Description: Processes API requests
+      EndpointConfiguration:
+        Types:
+          - REGIONAL
+      Name: nba-shot-prediction-gw
+  
+  apiGatewayDeployment:
+    Type: AWS::ApiGateway::Deployment
+    DependsOn:
+      - listTeamsMethod
+    Properties:
+      RestApiId: !Ref apiGateway
+      StageName: prod
+  
+  apiGatewayInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !GetAtt teamsRequestHandler.Arn
+      Principal: apigateway.amazonaws.com
+
+Outputs:
+  apiGatewayInvokeURL:
+    Value: !Sub https://${apiGateway}.execute-api.${AWS::Region}.amazonaws.com/prod
