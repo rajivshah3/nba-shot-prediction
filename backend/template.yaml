@@ -32,7 +32,6 @@ Resources:
         - AWSLambdaBasicExecutionRole
         - AWSSecretsManagerGetSecretValuePolicy:
             SecretArn: arn:aws:secretsmanager:us-east-1:383161319172:secret:nba-shot-prediction-mongodb-u8ylLd
-      Environment:
       Events:
         ListTeams:
           Type: Api
@@ -69,6 +68,32 @@ Resources:
           - arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
           - lambdaArn: !GetAtt teamsRequestHandler.Arn
       ResourceId: !Ref listTeamsResource
+      RestApiId: !Ref apiGateway
+
+  getTeamResource:
+    # CORS needs to be enabled in the console and from the Lambda function response
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      RestApiId: !Ref apiGateway
+      ParentId: !GetAtt listTeamsResource.ResourceId
+      PathPart: '{team}'
+
+  getTeamMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      HttpMethod: GET
+      AuthorizationType: NONE
+      RequestParameters:
+        method.request.path.team: true
+      Integration:
+        IntegrationHttpMethod: POST
+        Type: AWS_PROXY
+        Uri: !Sub
+          - arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+          - lambdaArn: !GetAtt teamsRequestHandler.Arn
+        RequestParameters:
+          integration.request.path.team: method.request.path.team
+      ResourceId: !Ref getTeamResource
       RestApiId: !Ref apiGateway
 
   # Each Lambda function is defined by properties:
