@@ -32,6 +32,16 @@ const client = new MongoClient(uri, {
     serverApi: ServerApiVersion.v1,
 });
 
+const createResponse = (statusCode, body) => {
+    return {
+        statusCode,
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        },
+        body: JSON.stringify(body),
+    };
+};
+
 export const handler = async (event) => {
     const database = client.db('nbadb');
     const teams = database.collection('teams');
@@ -39,24 +49,13 @@ export const handler = async (event) => {
     if (event.pathParameters && event.pathParameters.team) {
         const teamAbbreviation = event.pathParameters.team;
         const result = await teams.findOne({ abbreviation: teamAbbreviation });
-        return {
-            statusCode: 200,
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            },
-            body: JSON.stringify(result),
-        };
+
+        return createResponse(200, result);
     }
 
     // Get all team abbreviations
     const teamAbbreviations = await teams.find({}, { projection: { _id: false, abbreviation: true } }).toArray();
     const abbreviationsList = teamAbbreviations.map((team) => team.abbreviation);
 
-    return {
-        statusCode: 200,
-        headers: {
-            'Access-Control-Allow-Origin': '*'
-        },
-        body: JSON.stringify(abbreviationsList),
-    };
+    return createResponse(200, abbreviationsList);
 };
