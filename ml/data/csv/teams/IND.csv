@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Indiana Pacers,1610612754,IND,Miles,CJ,101139,0,F-G,78
-Indiana Pacers,1610612754,IND,Young,Joe,1626202,1,G,74
-Indiana Pacers,1610612754,IND,Stuckey,Rodney,201155,2,G,77
-Indiana Pacers,1610612754,IND,Hill,George,201588,3,G,76
-Indiana Pacers,1610612754,IND,Allen,Lavoy,202730,5,F-C,81
-Indiana Pacers,1610612754,IND,Budinger,Chase,201978,10,F,79
-Indiana Pacers,1610612754,IND,Ellis,Monta,101145,11,G,75
-Indiana Pacers,1610612754,IND,George,Paul,202331,13,F,80
-Indiana Pacers,1610612754,IND,Hill,Jordan,201941,27,C,82
-Indiana Pacers,1610612754,IND,Mahinmi,Ian,101133,28,C,83
-Indiana Pacers,1610612754,IND,Turner,Myles,1626167,33,F-C,83
-Indiana Pacers,1610612754,IND,Robinson,Glenn,203922,40,G-F,78
-Indiana Pacers,1610612754,IND,Hill,Solomon,203524,44,F,78
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Indiana Pacers,1610612754,IND,Miles,CJ,101139,0,F-G,78,11.8,1.0,2.7
+Indiana Pacers,1610612754,IND,Young,Joe,1626202,1,G,74,3.8,1.6,1.2
+Indiana Pacers,1610612754,IND,Stuckey,Rodney,201155,2,G,77,8.9,2.4,2.7
+Indiana Pacers,1610612754,IND,Hill,George,201588,3,G,76,12.1,3.5,4.0
+Indiana Pacers,1610612754,IND,Allen,Lavoy,202730,5,F-C,81,5.4,1.0,5.4
+Indiana Pacers,1610612754,IND,Budinger,Chase,201978,10,F,79,4.4,1.0,2.5
+Indiana Pacers,1610612754,IND,Ellis,Monta,101145,11,G,75,13.8,4.7,3.3
+Indiana Pacers,1610612754,IND,George,Paul,202331,13,F,80,23.1,4.1,7.0
+Indiana Pacers,1610612754,IND,Hill,Jordan,201941,27,C,82,8.8,1.2,6.2
+Indiana Pacers,1610612754,IND,Mahinmi,Ian,101133,28,C,83,9.3,1.5,7.1
+Indiana Pacers,1610612754,IND,Turner,Myles,1626167,33,F-C,83,10.3,0.7,5.5
+Indiana Pacers,1610612754,IND,Robinson,Glenn,203922,40,G-F,78,3.8,0.6,1.5
+Indiana Pacers,1610612754,IND,Hill,Solomon,203524,44,F,78,4.2,1.0,2.8

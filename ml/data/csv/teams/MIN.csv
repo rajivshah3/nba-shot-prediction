@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Minnesota Timberwolves,1610612750,MIN,Dieng,Gorgui,203476,5,C,82
-Minnesota Timberwolves,1610612750,MIN,LaVine,Zach,203897,8,G,77
-Minnesota Timberwolves,1610612750,MIN,Rubio,Ricky,201937,9,G,74
-Minnesota Timberwolves,1610612750,MIN,Rudez,Damjan,204014,10,F,82
-Minnesota Timberwolves,1610612750,MIN,Prince,Tayshaun,2419,12,F,81
-Minnesota Timberwolves,1610612750,MIN,Muhammad,Shabazz,203498,15,F,78
-Minnesota Timberwolves,1610612750,MIN,Garnett,Kevin,708,21,F,83
-Minnesota Timberwolves,1610612750,MIN,Wiggins,Andrew,203952,22,G-F,79
-Minnesota Timberwolves,1610612750,MIN,Martin,Kevin,2755,23,G,79
-Minnesota Timberwolves,1610612750,MIN,Miller,Andre,1889,24,G,75
-Minnesota Timberwolves,1610612750,MIN,Towns,Karl-Anthony,1626157,32,C,84
-Minnesota Timberwolves,1610612750,MIN,Payne,Adreian,203940,33,F,82
-Minnesota Timberwolves,1610612750,MIN,Bjelica,Nemanja,202357,88,F,81
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Minnesota Timberwolves,1610612750,MIN,Dieng,Gorgui,203476,5,C,82,10.1,1.7,7.1
+Minnesota Timberwolves,1610612750,MIN,LaVine,Zach,203897,8,G,77,14.0,3.1,2.8
+Minnesota Timberwolves,1610612750,MIN,Rubio,Ricky,201937,9,G,74,10.1,8.7,4.3
+Minnesota Timberwolves,1610612750,MIN,Rudez,Damjan,204014,10,F,82,2.3,0.3,0.6
+Minnesota Timberwolves,1610612750,MIN,Prince,Tayshaun,2419,12,F,81,2.9,1.0,1.9
+Minnesota Timberwolves,1610612750,MIN,Muhammad,Shabazz,203498,15,F,78,10.5,0.6,3.3
+Minnesota Timberwolves,1610612750,MIN,Garnett,Kevin,708,21,F,83,3.2,1.6,3.9
+Minnesota Timberwolves,1610612750,MIN,Wiggins,Andrew,203952,22,G-F,79,20.7,2.0,3.6
+Minnesota Timberwolves,1610612750,MIN,Martin,Kevin,2755,23,G,79,10.6,1.2,2.1
+Minnesota Timberwolves,1610612750,MIN,Miller,Andre,1889,24,G,75,3.4,2.2,0.9
+Minnesota Timberwolves,1610612750,MIN,Towns,Karl-Anthony,1626157,32,C,84,18.3,2.0,10.5
+Minnesota Timberwolves,1610612750,MIN,Payne,Adreian,203940,33,F,82,2.5,0.6,2.1
+Minnesota Timberwolves,1610612750,MIN,Bjelica,Nemanja,202357,88,F,81,5.1,1.4,3.5

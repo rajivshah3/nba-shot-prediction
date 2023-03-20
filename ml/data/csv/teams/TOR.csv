@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Toronto Raptors,1610612761,TOR,Johnson,James,201949,3,F,79
-Toronto Raptors,1610612761,TOR,Scola,Luis,2449,4,F,81
-Toronto Raptors,1610612761,TOR,Carroll,DeMarre,201960,5,F,78
-Toronto Raptors,1610612761,TOR,Joseph,Cory,202709,6,G,75
-Toronto Raptors,1610612761,TOR,Lowry,Kyle,200768,7,G,72
-Toronto Raptors,1610612761,TOR,Biyombo,Bismack,202687,8,F,80
-Toronto Raptors,1610612761,TOR,DeRozan,DeMar,201942,10,G,78
-Toronto Raptors,1610612761,TOR,Bennett,Anthony,203461,15,F,80
-Toronto Raptors,1610612761,TOR,Valanciunas,Jonas,202685,17,C,83
-Toronto Raptors,1610612761,TOR,Powell,Norman,1626181,24,G,76
-Toronto Raptors,1610612761,TOR,Ross,Terrence,203082,31,F-G,79
-Toronto Raptors,1610612761,TOR,Patterson,Patrick,202335,54,F,80
-Toronto Raptors,1610612761,TOR,Wright,Delon,1626153,55,G,77
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Toronto Raptors,1610612761,TOR,Johnson,James,201949,3,F,79,5.0,1.2,2.2
+Toronto Raptors,1610612761,TOR,Scola,Luis,2449,4,F,81,8.7,0.9,4.7
+Toronto Raptors,1610612761,TOR,Carroll,DeMarre,201960,5,F,78,11.0,1.0,4.7
+Toronto Raptors,1610612761,TOR,Joseph,Cory,202709,6,G,75,8.5,3.1,2.6
+Toronto Raptors,1610612761,TOR,Lowry,Kyle,200768,7,G,72,21.2,6.4,4.7
+Toronto Raptors,1610612761,TOR,Biyombo,Bismack,202687,8,F,80,5.5,0.4,8.0
+Toronto Raptors,1610612761,TOR,DeRozan,DeMar,201942,10,G,78,23.5,4.0,4.5
+Toronto Raptors,1610612761,TOR,Bennett,Anthony,203461,15,F,80,1.5,0.0,1.2
+Toronto Raptors,1610612761,TOR,Valanciunas,Jonas,202685,17,C,83,12.8,0.7,9.1
+Toronto Raptors,1610612761,TOR,Powell,Norman,1626181,24,G,76,5.6,1.0,2.3
+Toronto Raptors,1610612761,TOR,Ross,Terrence,203082,31,F-G,79,9.9,0.8,2.5
+Toronto Raptors,1610612761,TOR,Patterson,Patrick,202335,54,F,80,6.9,1.2,4.3
+Toronto Raptors,1610612761,TOR,Wright,Delon,1626153,55,G,77,3.8,1.1,1.4

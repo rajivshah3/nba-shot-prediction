@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Los Angeles Lakers,1610612747,LAL,Bryant,Kobe,977,24,F-G,78
-Los Angeles Lakers,1610612747,LAL,World Peace,Metta,1897,37,F,79
-Los Angeles Lakers,1610612747,LAL,Bass,Brandon,101138,2,F,80
-Los Angeles Lakers,1610612747,LAL,Williams,Lou,101150,23,G,74
-Los Angeles Lakers,1610612747,LAL,Hibbert,Roy,201579,17,C,86
-Los Angeles Lakers,1610612747,LAL,Sacre,Robert,203135,50,C,84
-Los Angeles Lakers,1610612747,LAL,Kelly,Ryan,203527,4,F,83
-Los Angeles Lakers,1610612747,LAL,Clarkson,Jordan,203903,6,G,77
-Los Angeles Lakers,1610612747,LAL,Randle,Julius,203944,30,F,80
-Los Angeles Lakers,1610612747,LAL,Brown,Anthony,1626148,3,F,79
-Los Angeles Lakers,1610612747,LAL,Russell,D'Angelo,1626156,1,G,76
-Los Angeles Lakers,1610612747,LAL,Nance Jr.,Larry,1626204,7,F,80
-Los Angeles Lakers,1610612747,LAL,Huertas,Marcelo,1626273,9,G,75
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Los Angeles Lakers,1610612747,LAL,Bryant,Kobe,977,24,F-G,78,17.6,2.8,3.7
+Los Angeles Lakers,1610612747,LAL,World Peace,Metta,1897,37,F,79,5.0,0.8,2.5
+Los Angeles Lakers,1610612747,LAL,Bass,Brandon,101138,2,F,80,7.2,1.1,4.3
+Los Angeles Lakers,1610612747,LAL,Williams,Lou,101150,23,G,74,15.3,2.5,2.5
+Los Angeles Lakers,1610612747,LAL,Hibbert,Roy,201579,17,C,86,5.9,1.2,4.9
+Los Angeles Lakers,1610612747,LAL,Sacre,Robert,203135,50,C,84,3.5,0.6,2.9
+Los Angeles Lakers,1610612747,LAL,Kelly,Ryan,203527,4,F,83,4.2,0.6,3.4
+Los Angeles Lakers,1610612747,LAL,Clarkson,Jordan,203903,6,G,77,15.5,2.4,4.0
+Los Angeles Lakers,1610612747,LAL,Randle,Julius,203944,30,F,80,11.3,1.8,10.2
+Los Angeles Lakers,1610612747,LAL,Brown,Anthony,1626148,3,F,79,4.0,0.7,2.4
+Los Angeles Lakers,1610612747,LAL,Russell,D'Angelo,1626156,1,G,76,13.2,3.3,3.4
+Los Angeles Lakers,1610612747,LAL,Nance Jr.,Larry,1626204,7,F,80,5.5,0.7,5.0
+Los Angeles Lakers,1610612747,LAL,Huertas,Marcelo,1626273,9,G,75,4.5,3.4,1.7

@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Detroit Pistons,1610612765,DET,Drummond,Andre,203083,0,C,83
-Detroit Pistons,1610612765,DET,Jackson,Reggie,202704,1,G,74
-Detroit Pistons,1610612765,DET,Johnson,Stanley,1626169,3,F,78
-Detroit Pistons,1610612765,DET,Caldwell-Pope,Kentavious,203484,5,G,77
-Detroit Pistons,1610612765,DET,Dinwiddie,Spencer,203915,8,G,77
-Detroit Pistons,1610612765,DET,Baynes,Aron,203382,12,F-C,82
-Detroit Pistons,1610612765,DET,Morris,Marcus,202694,13,F,80
-Detroit Pistons,1610612765,DET,Meeks,Jodie,201975,20,G,76
-Detroit Pistons,1610612765,DET,Blake,Steve,2581,22,G,75
-Detroit Pistons,1610612765,DET,Ilyasova,Ersan,101141,23,F,81
-Detroit Pistons,1610612765,DET,Bullock,Reggie,203493,25,F,78
-Detroit Pistons,1610612765,DET,Tolliver,Anthony,201229,43,F,80
-Detroit Pistons,1610612765,DET,Anthony,Joel,201202,50,C,81
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Detroit Pistons,1610612765,DET,Drummond,Andre,203083,0,C,83,16.2,0.8,14.8
+Detroit Pistons,1610612765,DET,Jackson,Reggie,202704,1,G,74,18.8,6.2,3.2
+Detroit Pistons,1610612765,DET,Johnson,Stanley,1626169,3,F,78,8.1,1.6,4.2
+Detroit Pistons,1610612765,DET,Caldwell-Pope,Kentavious,203484,5,G,77,14.5,1.8,3.7
+Detroit Pistons,1610612765,DET,Dinwiddie,Spencer,203915,8,G,77,4.8,1.8,1.4
+Detroit Pistons,1610612765,DET,Baynes,Aron,203382,12,F-C,82,6.3,0.6,4.7
+Detroit Pistons,1610612765,DET,Morris,Marcus,202694,13,F,80,14.1,2.5,5.1
+Detroit Pistons,1610612765,DET,Meeks,Jodie,201975,20,G,76,7.3,1.0,1.7
+Detroit Pistons,1610612765,DET,Blake,Steve,2581,22,G,75,4.4,3.4,1.5
+Detroit Pistons,1610612765,DET,Ilyasova,Ersan,101141,23,F,81,11.3,1.1,5.4
+Detroit Pistons,1610612765,DET,Bullock,Reggie,203493,25,F,78,3.3,0.7,1.8
+Detroit Pistons,1610612765,DET,Tolliver,Anthony,201229,43,F,80,5.3,0.7,3.2
+Detroit Pistons,1610612765,DET,Anthony,Joel,201202,50,C,81,0.9,0.1,1.1

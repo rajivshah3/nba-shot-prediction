@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Dallas Mavericks,1610612742,DAL,Nowitzki,Dirk,1717,41,F,84
-Dallas Mavericks,1610612742,DAL,Pachulia,Zaza,2585,27,C,83
-Dallas Mavericks,1610612742,DAL,Harris,Devin,2734,34,G,75
-Dallas Mavericks,1610612742,DAL,Felton,Raymond,101109,2,G,73
-Dallas Mavericks,1610612742,DAL,Villanueva,Charlie,101111,3,F,83
-Dallas Mavericks,1610612742,DAL,Williams,Deron,101114,8,G,75
-Dallas Mavericks,1610612742,DAL,Barea,Jose Juan,200826,5,G,70
-Dallas Mavericks,1610612742,DAL,McGee,JaVale,201580,11,C,84
-Dallas Mavericks,1610612742,DAL,Matthews,Wesley,202083,23,G-F,77
-Dallas Mavericks,1610612742,DAL,Evans,Jeremy,202379,21,F,81
-Dallas Mavericks,1610612742,DAL,Parsons,Chandler,202718,25,F,81
-Dallas Mavericks,1610612742,DAL,Powell,Dwight,203939,7,F-C,82
-Dallas Mavericks,1610612742,DAL,Anderson,Justin,1626147,1,G-F,77
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Dallas Mavericks,1610612742,DAL,Nowitzki,Dirk,1717,41,F,84,18.3,1.8,6.5
+Dallas Mavericks,1610612742,DAL,Pachulia,Zaza,2585,27,C,83,8.6,1.7,9.4
+Dallas Mavericks,1610612742,DAL,Harris,Devin,2734,34,G,75,7.6,1.8,2.2
+Dallas Mavericks,1610612742,DAL,Felton,Raymond,101109,2,G,73,9.5,3.6,3.2
+Dallas Mavericks,1610612742,DAL,Villanueva,Charlie,101111,3,F,83,5.1,0.4,2.5
+Dallas Mavericks,1610612742,DAL,Williams,Deron,101114,8,G,75,14.1,5.8,2.9
+Dallas Mavericks,1610612742,DAL,Barea,Jose Juan,200826,5,G,70,10.9,4.1,2.1
+Dallas Mavericks,1610612742,DAL,McGee,JaVale,201580,11,C,84,5.1,0.1,3.9
+Dallas Mavericks,1610612742,DAL,Matthews,Wesley,202083,23,G-F,77,12.5,1.9,3.1
+Dallas Mavericks,1610612742,DAL,Evans,Jeremy,202379,21,F,81,2.4,0.1,1.8
+Dallas Mavericks,1610612742,DAL,Parsons,Chandler,202718,25,F,81,13.7,2.8,4.7
+Dallas Mavericks,1610612742,DAL,Powell,Dwight,203939,7,F-C,82,5.8,0.6,4.0
+Dallas Mavericks,1610612742,DAL,Anderson,Justin,1626147,1,G-F,77,3.8,0.5,2.4

@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Cleveland Cavaliers,1610612739,CLE,Jefferson,Richard,2210,24,F,79
-Cleveland Cavaliers,1610612739,CLE,James,LeBron,2544,23,F,81
-Cleveland Cavaliers,1610612739,CLE,Williams,Mo,2590,52,G,73
-Cleveland Cavaliers,1610612739,CLE,Jones,James,2592,1,G-F,80
-Cleveland Cavaliers,1610612739,CLE,Smith,J.R.,2747,5,G-F,78
-Cleveland Cavaliers,1610612739,CLE,Varejao,Anderson,2760,17,F,83
-Cleveland Cavaliers,1610612739,CLE,Love,Kevin,201567,0,F,80
-Cleveland Cavaliers,1610612739,CLE,Mozgov,Timofey,202389,20,C,85
-Cleveland Cavaliers,1610612739,CLE,Irving,Kyrie,202681,2,G,74
-Cleveland Cavaliers,1610612739,CLE,Thompson,Tristan,202684,13,C-F,81
-Cleveland Cavaliers,1610612739,CLE,Shumpert,Iman,202697,4,G,77
-Cleveland Cavaliers,1610612739,CLE,Cunningham,Jared,203099,9,G,76
-Cleveland Cavaliers,1610612739,CLE,Dellavedova,Matthew,203521,8,G,75
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Cleveland Cavaliers,1610612739,CLE,Jefferson,Richard,2210,24,F,79,5.5,0.8,1.7
+Cleveland Cavaliers,1610612739,CLE,James,LeBron,2544,23,F,81,25.3,6.8,7.4
+Cleveland Cavaliers,1610612739,CLE,Williams,Mo,2590,52,G,73,8.2,2.4,1.8
+Cleveland Cavaliers,1610612739,CLE,Jones,James,2592,1,G-F,80,3.7,0.3,1.0
+Cleveland Cavaliers,1610612739,CLE,Smith,J.R.,2747,5,G-F,78,12.4,1.7,2.8
+Cleveland Cavaliers,1610612739,CLE,Varejao,Anderson,2760,17,F,83,2.6,0.6,2.9
+Cleveland Cavaliers,1610612739,CLE,Love,Kevin,201567,0,F,80,16.0,2.4,9.9
+Cleveland Cavaliers,1610612739,CLE,Mozgov,Timofey,202389,20,C,85,6.3,0.4,4.4
+Cleveland Cavaliers,1610612739,CLE,Irving,Kyrie,202681,2,G,74,19.6,4.7,3.0
+Cleveland Cavaliers,1610612739,CLE,Thompson,Tristan,202684,13,C-F,81,7.8,0.8,9.0
+Cleveland Cavaliers,1610612739,CLE,Shumpert,Iman,202697,4,G,77,5.8,1.7,3.8
+Cleveland Cavaliers,1610612739,CLE,Cunningham,Jared,203099,9,G,76,2.6,0.5,0.7
+Cleveland Cavaliers,1610612739,CLE,Dellavedova,Matthew,203521,8,G,75,7.5,4.4,2.1

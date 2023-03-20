@@ -1,13 +1,13 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Washington Wizards,1610612764,WAS,Gooden,Drew,2400,90,F,82
-Washington Wizards,1610612764,WAS,Hilario,Nene,2403,42,F-C,83
-Washington Wizards,1610612764,WAS,Gortat,Marcin,101162,13,C,83
-Washington Wizards,1610612764,WAS,Dudley,Jared,201162,1,F,78
-Washington Wizards,1610612764,WAS,Sessions,Ramon,201196,7,G,75
-Washington Wizards,1610612764,WAS,Blair,DeJuan,201971,45,C-F,79
-Washington Wizards,1610612764,WAS,Temple,Garrett,202066,17,G,78
-Washington Wizards,1610612764,WAS,Wall,John,202322,2,G,75
-Washington Wizards,1610612764,WAS,Neal,Gary,202390,14,G,76
-Washington Wizards,1610612764,WAS,Porter,Otto,203490,22,F,80
-Washington Wizards,1610612764,WAS,Eddie,Jarell,204067,8,G-F,79
-Washington Wizards,1610612764,WAS,Oubre,Kelly,1626162,12,F,78
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Washington Wizards,1610612764,WAS,Gooden,Drew,2400,90,F,82,2.7,0.4,2.8
+Washington Wizards,1610612764,WAS,Hilario,Nene,2403,42,F-C,83,9.2,1.7,4.5
+Washington Wizards,1610612764,WAS,Gortat,Marcin,101162,13,C,83,13.5,1.4,9.9
+Washington Wizards,1610612764,WAS,Dudley,Jared,201162,1,F,78,7.9,2.1,3.5
+Washington Wizards,1610612764,WAS,Sessions,Ramon,201196,7,G,75,9.9,2.9,2.5
+Washington Wizards,1610612764,WAS,Blair,DeJuan,201971,45,C-F,79,2.1,0.4,2.0
+Washington Wizards,1610612764,WAS,Temple,Garrett,202066,17,G,78,7.3,1.8,2.7
+Washington Wizards,1610612764,WAS,Wall,John,202322,2,G,75,19.9,10.2,4.9
+Washington Wizards,1610612764,WAS,Neal,Gary,202390,14,G,76,9.8,1.2,2.1
+Washington Wizards,1610612764,WAS,Porter,Otto,203490,22,F,80,11.6,1.6,5.2
+Washington Wizards,1610612764,WAS,Eddie,Jarell,204067,8,G-F,79,2.4,0.2,0.9
+Washington Wizards,1610612764,WAS,Oubre,Kelly,1626162,12,F,78,3.7,0.2,2.1

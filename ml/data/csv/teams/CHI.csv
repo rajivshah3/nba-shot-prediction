@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Chicago Bulls,1610612741,CHI,Brooks,Aaron,201166,0,G,72
-Chicago Bulls,1610612741,CHI,Rose,Derrick,201565,1,G,75
-Chicago Bulls,1610612741,CHI,McDermott,Doug,203926,3,F,78
-Chicago Bulls,1610612741,CHI,Portis,Bobby,1626171,5,F,83
-Chicago Bulls,1610612741,CHI,Hinrich,Kirk,2550,12,G,76
-Chicago Bulls,1610612741,CHI,Noah,Joakim,201149,13,C,83
-Chicago Bulls,1610612741,CHI,Gasol,Pau,2200,16,C-F,84
-Chicago Bulls,1610612741,CHI,Snell,Tony,203503,20,F,78
-Chicago Bulls,1610612741,CHI,Butler,Jimmy,202710,21,G-F,79
-Chicago Bulls,1610612741,CHI,Gibson,Taj,201959,22,F,81
-Chicago Bulls,1610612741,CHI,Bairstow,Cameron,203946,41,F-C,81
-Chicago Bulls,1610612741,CHI,Mirotic,Nikola,202703,44,F,82
-Chicago Bulls,1610612741,CHI,Moore,E'Twaun,202734,55,G,75
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Chicago Bulls,1610612741,CHI,Brooks,Aaron,201166,0,G,72,7.1,2.6,1.5
+Chicago Bulls,1610612741,CHI,Rose,Derrick,201565,1,G,75,16.4,4.7,3.4
+Chicago Bulls,1610612741,CHI,McDermott,Doug,203926,3,F,78,9.4,0.7,2.4
+Chicago Bulls,1610612741,CHI,Portis,Bobby,1626171,5,F,83,7.0,0.8,5.4
+Chicago Bulls,1610612741,CHI,Hinrich,Kirk,2550,12,G,76,3.8,1.7,1.7
+Chicago Bulls,1610612741,CHI,Noah,Joakim,201149,13,C,83,4.3,3.8,8.8
+Chicago Bulls,1610612741,CHI,Gasol,Pau,2200,16,C-F,84,16.5,4.1,11.0
+Chicago Bulls,1610612741,CHI,Snell,Tony,203503,20,F,78,5.3,1.0,3.1
+Chicago Bulls,1610612741,CHI,Butler,Jimmy,202710,21,G-F,79,20.9,4.8,5.3
+Chicago Bulls,1610612741,CHI,Gibson,Taj,201959,22,F,81,8.6,1.5,6.9
+Chicago Bulls,1610612741,CHI,Bairstow,Cameron,203946,41,F-C,81,1.9,0.3,1.6
+Chicago Bulls,1610612741,CHI,Mirotic,Nikola,202703,44,F,82,11.8,1.5,5.5
+Chicago Bulls,1610612741,CHI,Moore,E'Twaun,202734,55,G,75,7.5,1.7,2.3

@@ -1,13 +1,13 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-New Orleans Pelicans,1610612740,NOP,Perkins,Kendrick,2570,5,C,82
-New Orleans Pelicans,1610612740,NOP,Gordon,Eric,201569,10,G,75
-New Orleans Pelicans,1610612740,NOP,Ajinca,Alexis,201582,42,C,86
-New Orleans Pelicans,1610612740,NOP,Anderson,Ryan,201583,33,F,81
-New Orleans Pelicans,1610612740,NOP,Asik,Omer,201600,3,C,84
-New Orleans Pelicans,1610612740,NOP,Holiday,Jrue,201950,11,G,77
-New Orleans Pelicans,1610612740,NOP,Douglas,Toney,201962,16,G,74
-New Orleans Pelicans,1610612740,NOP,Cunningham,Dante,201967,44,F,80
-New Orleans Pelicans,1610612740,NOP,Gee,Alonzo,202087,15,F,78
-New Orleans Pelicans,1610612740,NOP,Babbitt,Luke,202337,8,F,81
-New Orleans Pelicans,1610612740,NOP,Smith,Ish,202397,4,G,72
-New Orleans Pelicans,1610612740,NOP,Davis,Anthony,203076,23,F-C,82
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+New Orleans Pelicans,1610612740,NOP,Perkins,Kendrick,2570,5,C,82,2.5,0.8,3.5
+New Orleans Pelicans,1610612740,NOP,Gordon,Eric,201569,10,G,75,15.2,2.7,2.2
+New Orleans Pelicans,1610612740,NOP,Ajinca,Alexis,201582,42,C,86,6.0,0.5,4.6
+New Orleans Pelicans,1610612740,NOP,Anderson,Ryan,201583,33,F,81,17.0,1.1,6.0
+New Orleans Pelicans,1610612740,NOP,Asik,Omer,201600,3,C,84,4.0,0.4,6.1
+New Orleans Pelicans,1610612740,NOP,Holiday,Jrue,201950,11,G,77,16.8,6.0,3.0
+New Orleans Pelicans,1610612740,NOP,Douglas,Toney,201962,16,G,74,8.7,2.6,2.3
+New Orleans Pelicans,1610612740,NOP,Cunningham,Dante,201967,44,F,80,6.1,1.0,3.0
+New Orleans Pelicans,1610612740,NOP,Gee,Alonzo,202087,15,F,78,4.5,1.0,3.4
+New Orleans Pelicans,1610612740,NOP,Babbitt,Luke,202337,8,F,81,7.0,1.1,3.1
+New Orleans Pelicans,1610612740,NOP,Smith,Ish,202397,4,G,72,8.9,5.7,3.4
+New Orleans Pelicans,1610612740,NOP,Davis,Anthony,203076,23,F-C,82,24.3,1.9,10.3

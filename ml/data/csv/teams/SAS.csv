@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-San Antonio Spurs,1610612759,SAS,Duncan,Tim,1495,21,C-F,83
-San Antonio Spurs,1610612759,SAS,Ginobili,Manu,1938,20,G,78
-San Antonio Spurs,1610612759,SAS,Parker,Tony,2225,9,G,74
-San Antonio Spurs,1610612759,SAS,Butler,Rasual,2446,18,F,79
-San Antonio Spurs,1610612759,SAS,West,David,2561,30,F,81
-San Antonio Spurs,1610612759,SAS,Diaw,Boris,2564,33,C-F,80
-San Antonio Spurs,1610612759,SAS,Aldridge,LaMarcus,200746,12,F,83
-San Antonio Spurs,1610612759,SAS,Green,Danny,201980,14,G-F,78
-San Antonio Spurs,1610612759,SAS,Mills,Patty,201988,8,G,72
-San Antonio Spurs,1610612759,SAS,Leonard,Kawhi,202695,2,F,79
-San Antonio Spurs,1610612759,SAS,McCallum,Ray,203492,3,G,75
-San Antonio Spurs,1610612759,SAS,Anderson,Kyle,203937,1,F,81
-San Antonio Spurs,1610612759,SAS,Marjanovic,Boban,1626246,40,C,88
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+San Antonio Spurs,1610612759,SAS,Duncan,Tim,1495,21,C-F,83,8.6,2.7,7.3
+San Antonio Spurs,1610612759,SAS,Ginobili,Manu,1938,20,G,78,9.6,3.1,2.5
+San Antonio Spurs,1610612759,SAS,Parker,Tony,2225,9,G,74,11.9,5.3,2.4
+San Antonio Spurs,1610612759,SAS,Butler,Rasual,2446,18,F,79,2.7,0.5,1.2
+San Antonio Spurs,1610612759,SAS,West,David,2561,30,F,81,7.1,1.8,4.0
+San Antonio Spurs,1610612759,SAS,Diaw,Boris,2564,33,C-F,80,6.4,2.3,3.1
+San Antonio Spurs,1610612759,SAS,Aldridge,LaMarcus,200746,12,F,83,18.0,1.5,8.5
+San Antonio Spurs,1610612759,SAS,Green,Danny,201980,14,G-F,78,7.2,1.8,3.8
+San Antonio Spurs,1610612759,SAS,Mills,Patty,201988,8,G,72,8.5,2.8,2.0
+San Antonio Spurs,1610612759,SAS,Leonard,Kawhi,202695,2,F,79,21.2,2.6,6.8
+San Antonio Spurs,1610612759,SAS,McCallum,Ray,203492,3,G,75,2.2,1.1,1.0
+San Antonio Spurs,1610612759,SAS,Anderson,Kyle,203937,1,F,81,4.5,1.6,3.1
+San Antonio Spurs,1610612759,SAS,Marjanovic,Boban,1626246,40,C,88,5.5,0.4,3.6

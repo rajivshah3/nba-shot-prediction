@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Philadelphia 76ers,1610612755,PHI,Canaan,Isaiah,203477,0.0,G,72
-Philadelphia 76ers,1610612755,PHI,Smith,Ish,202397,,G,72
-Philadelphia 76ers,1610612755,PHI,Noel,Nerlens,203457,4.0,F-C,82
-Philadelphia 76ers,1610612755,PHI,Marshall,Kendall,203088,5.0,G,76
-Philadelphia 76ers,1610612755,PHI,Landry,Carl,201171,7.0,F,81
-Philadelphia 76ers,1610612755,PHI,Sampson,JaKarr,203960,9.0,G-F,79
-Philadelphia 76ers,1610612755,PHI,Stauskas,Nik,203917,11.0,G,78
-Philadelphia 76ers,1610612755,PHI,McConnell,TJ,204456,12.0,G,73
-Philadelphia 76ers,1610612755,PHI,Holmes,Richaun,1626158,22.0,F,80
-Philadelphia 76ers,1610612755,PHI,Thompson,Hollis,203138,31.0,G-F,80
-Philadelphia 76ers,1610612755,PHI,Covington,Robert,203496,33.0,F,79
-Philadelphia 76ers,1610612755,PHI,Grant,Jerami,203924,39.0,F,80
-Philadelphia 76ers,1610612755,PHI,Okafor,Jahlil,1626143,8.0,C,82
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Philadelphia 76ers,1610612755,PHI,Canaan,Isaiah,203477,0.0,G,72,11.0,1.8,2.3
+Philadelphia 76ers,1610612755,PHI,Smith,Ish,202397,,G,72,8.9,5.7,3.4
+Philadelphia 76ers,1610612755,PHI,Noel,Nerlens,203457,4.0,F-C,82,11.1,1.8,8.1
+Philadelphia 76ers,1610612755,PHI,Marshall,Kendall,203088,5.0,G,76,3.7,2.4,0.9
+Philadelphia 76ers,1610612755,PHI,Landry,Carl,201171,7.0,F,81,9.8,0.9,4.1
+Philadelphia 76ers,1610612755,PHI,Sampson,JaKarr,203960,9.0,G-F,79,5.1,0.6,2.7
+Philadelphia 76ers,1610612755,PHI,Stauskas,Nik,203917,11.0,G,78,8.5,1.9,2.5
+Philadelphia 76ers,1610612755,PHI,McConnell,TJ,204456,12.0,G,73,6.1,4.5,3.1
+Philadelphia 76ers,1610612755,PHI,Holmes,Richaun,1626158,22.0,F,80,5.6,0.6,2.6
+Philadelphia 76ers,1610612755,PHI,Thompson,Hollis,203138,31.0,G-F,80,9.8,1.3,3.5
+Philadelphia 76ers,1610612755,PHI,Covington,Robert,203496,33.0,F,79,12.8,1.4,6.3
+Philadelphia 76ers,1610612755,PHI,Grant,Jerami,203924,39.0,F,80,9.7,1.8,4.7
+Philadelphia 76ers,1610612755,PHI,Okafor,Jahlil,1626143,8.0,C,82,17.5,1.2,7.0

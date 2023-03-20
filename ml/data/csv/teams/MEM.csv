@@ -1,14 +1,14 @@
-name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height
-Memphis Grizzlies,1610612763,MEM,Green,JaMychal,203210,0,F,81
-Memphis Grizzlies,1610612763,MEM,Smith,Russ,203893,2,G,72
-Memphis Grizzlies,1610612763,MEM,Adams,Jordan,203919,3,G,77
-Memphis Grizzlies,1610612763,MEM,Lee,Courtney,201584,5,G,77
-Memphis Grizzlies,1610612763,MEM,Allen,Tony,2754,9,G-F,76
-Memphis Grizzlies,1610612763,MEM,Conley,Mike,201144,11,G,73
-Memphis Grizzlies,1610612763,MEM,Carter,Vince,1713,15,G-F,78
-Memphis Grizzlies,1610612763,MEM,Udrih,Beno,2757,19,G,75
-Memphis Grizzlies,1610612763,MEM,Barnes,Matt,2440,22,F,79
-Memphis Grizzlies,1610612763,MEM,Green,Jeff,201145,32,F,80
-Memphis Grizzlies,1610612763,MEM,Gasol,Marc,201188,33,C,83
-Memphis Grizzlies,1610612763,MEM,Wright,Brandan,201148,34,F,82
-Memphis Grizzlies,1610612763,MEM,Randolph,Zach,2216,50,F,81
+name,teamid,abbreviation,lastname,firstname,playerid,jersey,position,height,points,assists,rebounds
+Memphis Grizzlies,1610612763,MEM,Green,JaMychal,203210,0,F,81,7.4,0.9,4.8
+Memphis Grizzlies,1610612763,MEM,Smith,Russ,203893,2,G,72,1.5,0.7,0.6
+Memphis Grizzlies,1610612763,MEM,Adams,Jordan,203919,3,G,77,3.5,1.5,1.0
+Memphis Grizzlies,1610612763,MEM,Lee,Courtney,201584,5,G,77,10.0,1.5,2.3
+Memphis Grizzlies,1610612763,MEM,Allen,Tony,2754,9,G-F,76,8.4,1.1,4.6
+Memphis Grizzlies,1610612763,MEM,Conley,Mike,201144,11,G,73,15.3,6.1,2.9
+Memphis Grizzlies,1610612763,MEM,Carter,Vince,1713,15,G-F,78,6.6,0.9,2.4
+Memphis Grizzlies,1610612763,MEM,Udrih,Beno,2757,19,G,75,5.9,3.3,1.1
+Memphis Grizzlies,1610612763,MEM,Barnes,Matt,2440,22,F,79,10.0,2.1,5.5
+Memphis Grizzlies,1610612763,MEM,Green,Jeff,201145,32,F,80,12.2,1.8,4.5
+Memphis Grizzlies,1610612763,MEM,Gasol,Marc,201188,33,C,83,16.6,3.8,7.0
+Memphis Grizzlies,1610612763,MEM,Wright,Brandan,201148,34,F,82,6.9,0.5,3.6
+Memphis Grizzlies,1610612763,MEM,Randolph,Zach,2216,50,F,81,15.3,2.1,7.8
