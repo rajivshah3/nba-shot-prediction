@@ -3,6 +3,7 @@
     "description": "nba-shot-prediction-backend",
     "version": "0.0.1",
     "private": true,
+    "type": "module",
     "dependencies": {
         "@aws-sdk/client-secrets-manager": "^3.294.0",
         "mongodb": "^5.1.0"

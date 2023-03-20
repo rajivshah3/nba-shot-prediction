@@ -1,5 +1,5 @@
-const { SecretsManagerClient, GetSecretValueCommand} = require("@aws-sdk/client-secrets-manager")
-const { MongoClient, ServerApiVersion } = require('mongodb');
+import { SecretsManagerClient, GetSecretValueCommand } from "@aws-sdk/client-secrets-manager";
+import { MongoClient, ServerApiVersion } from "mongodb";
 
 const getMongoPassword = async () => {
     const client = new SecretsManagerClient({
@@ -24,18 +24,17 @@ const getMongoPassword = async () => {
     return response.SecretString;
 }
 
-exports.handler = async (event) => {
-    const mongoPassword = await getMongoPassword();
-    const uri = `mongodb+srv://lambda:${mongoPassword}@cluster0.mepcupu.mongodb.net/?retryWrites=true&w=majority`;
-    const client = new MongoClient(uri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        serverApi: ServerApiVersion.v1,
-    });
+const mongoPassword = await getMongoPassword();
+const uri = `mongodb+srv://lambda:${mongoPassword}@cluster0.mepcupu.mongodb.net/?retryWrites=true&w=majority`;
+const client = new MongoClient(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverApi: ServerApiVersion.v1,
+});
+
+export const handler = async (event) => {
     const database = client.db('nbadb');
     const teams = database.collection('teams');
-    console.log("Connected to MongoDB");
-
     const teamAbbreviations = await teams.find({}, { projection: { _id: false, abbreviation: true } }).toArray();
     const abbreviationsList = teamAbbreviations.map((team) => team.abbreviation);
 
