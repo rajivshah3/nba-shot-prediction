@@ -50,6 +50,10 @@ export const handler = async (event) => {
         const teamAbbreviation = event.pathParameters.team;
         const result = await teams.findOne({ abbreviation: teamAbbreviation });
 
+        if (result == null) {
+            return createResponse(404, "Team not found");
+        }
+
         return createResponse(200, result);
     }
 
