@@ -18,7 +18,7 @@ Resources:
   # Each Lambda function is defined by properties:
   # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
 
-  # This is a Lambda function config associated with the source code: get-all-items.js
+  # Teams
   teamsRequestHandler:
     Type: AWS::Serverless::Function
     Properties:
@@ -95,6 +95,84 @@ Resources:
           integration.request.path.team: method.request.path.team
       ResourceId: !Ref getTeamResource
       RestApiId: !Ref apiGateway
+  
+  # Games
+  gamesRequestHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/games.handler
+      Runtime: nodejs16.x
+      Architectures:
+        - x86_64
+      MemorySize: 128
+      Timeout: 100
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: arn:aws:secretsmanager:us-east-1:383161319172:secret:nba-shot-prediction-mongodb-u8ylLd
+      Events:
+        ListGames:
+          Type: Api
+          Properties:
+            Path: /games
+            Method: GET
+            RestApiId: !Ref apiGateway
+        GetGame:
+          Type: Api
+          Properties:
+            Path: /games/{game}
+            Method: GET
+            RequestParameters: 
+              - method.request.path.game
+            RestApiId: !Ref apiGateway
+
+  listGamesResource:
+    # CORS needs to be enabled in the console and from the Lambda function response
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      RestApiId: !Ref apiGateway
+      ParentId: !GetAtt apiGateway.RootResourceId
+      PathPart: games
+
+  listGamesMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      HttpMethod: GET
+      AuthorizationType: NONE
+      Integration:
+        IntegrationHttpMethod: POST
+        Type: AWS_PROXY
+        Uri: !Sub
+          - arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+          - lambdaArn: !GetAtt gamesRequestHandler.Arn
+      ResourceId: !Ref listGamesResource
+      RestApiId: !Ref apiGateway
+
+  getGameResource:
+    # CORS needs to be enabled in the console and from the Lambda function response
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      RestApiId: !Ref apiGateway
+      ParentId: !GetAtt listGamesResource.ResourceId
+      PathPart: '{game}'
+
+  getGameMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      HttpMethod: GET
+      AuthorizationType: NONE
+      RequestParameters:
+        method.request.path.game: true
+      Integration:
+        IntegrationHttpMethod: POST
+        Type: AWS_PROXY
+        Uri: !Sub
+          - arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+          - lambdaArn: !GetAtt gamesRequestHandler.Arn
+        RequestParameters:
+          integration.request.path.team: method.request.path.game
+      ResourceId: !Ref getGameResource
+      RestApiId: !Ref apiGateway
 
   # Each Lambda function is defined by properties:
   # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
@@ -113,15 +191,23 @@ Resources:
     Type: AWS::ApiGateway::Deployment
     DependsOn:
       - listTeamsMethod
+      - listGamesMethod
     Properties:
       RestApiId: !Ref apiGateway
       StageName: prod
   
-  apiGatewayInvokePermission:
+  teamsApiGatewayInvokePermission:
     Type: AWS::Lambda::Permission
     Properties:
       Action: lambda:InvokeFunction
       FunctionName: !GetAtt teamsRequestHandler.Arn
+      Principal: apigateway.amazonaws.com
+
+  gamesApiGatewayInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !GetAtt gamesRequestHandler.Arn
       Principal: apigateway.amazonaws.com
 
 Outputs:
